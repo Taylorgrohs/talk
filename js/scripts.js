@@ -2,6 +2,8 @@ $(document).ready(function(){
   $("button#hello").click(function(){
     $("ul#user").prepend("<li>hello</li>");
     $("ul#webpage").prepend("<li>hello there</li>");
+    $("ul#user").css("background-color", "green");
+    $("ul#webpage").css("background-color", "red");
     $("ul#user").children("li").first().click(function() {
     $(this).remove();
     });
